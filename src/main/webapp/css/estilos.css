@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Fondo general de la página (Dark Mode) */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #0a0f1d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+/* Contenedor principal para alinear logo, títulos y tarjeta */
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos del Logo */
+.logo-ug {
+    height: 64px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* Títulos fuera de la tarjeta */
+.main-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #64748b;
+    margin: 0 0 32px 0;
+    text-align: center;
+}
+
+/* Tarjeta del formulario */
+.login-card {
+    background: #1e2738; /* Azul noche para la tarjeta */
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #2d3748;
+}
+
+/* Espaciado del formulario */
+.form-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #e2e8f0;
+}
+
+/* Asterisco rojo */
+.required {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+/* Inputs de texto claro */
+input[type=email],
+input[type=password],
+input[type=text] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=text]:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Botón principal */
+.btn-primary,
+input[type=submit] {
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    margin-top: 15px;
+}
+
+.btn-primary:hover,
+input[type=submit]:hover {
+    background: #1d4ed8;
+}
+
+.btn-primary:active,
+input[type=submit]:active {
+    transform: scale(0.98);
+}
+
+/* Sección de "Regístrate aquí" */
+.register-link {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.register-link a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.register-link a:hover {
+    color: #60a5fa;
+    text-decoration: underline;
+}
+.profile-info {
+    background: #0f172a; /* Fondo más oscuro para dar contraste */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #2d3748;
+    margin-bottom: 25px;
+    color: #e2e8f0;
+}
+
+.profile-info p {
+    margin: 10px 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between; /* Separa la etiqueta del valor */
+    border-bottom: 1px solid #1e2738;
+    padding-bottom: 8px;
+}
+
+.profile-info p:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.profile-info strong {
+    color: #60a5fa; /* Azul claro para los encabezados de los datos */
+    font-weight: 500;
+}
+
+/* Color rojo para el botón de cerrar sesión */
+.text-danger {
+    color: #ef4444 !important;
+}
+
+.text-danger:hover {
+    color: #f87171 !important;
+}
+.forum-wrapper {
+    width: 100%;
+    max-width: 800px; /* Más ancho que el login para lectura cómoda */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Header superior */
+.forum-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e2738;
+    padding: 15px 25px;
+    border-radius: 12px;
+    border: 1px solid #2d3748;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo-ug-small {
+    height: 35px;
+    width: auto;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.welcome-text {
+    color: #e2e8f0;
+    font-size: 14px;
+}
+
+/* Botones secundarios (Gris y Rojo) */
+.btn-secondary {
+    background: #334155;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #475569;
+}
+
+.btn-danger {
+    background: #dc2626;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn-danger:hover {
+    background: #ef4444;
+}
+
+/* Tarjeta para publicar mensajes */
+.publish-card {
+    background: #1e2738;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #2d3748;
+}
+
+.publish-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #f8fafc;
+    text-align: left;
+}
+
+.publish-card textarea {
+    width: 100%;
+    background: #0f172a; /* Fondo oscuro para el input */
+    color: #e2e8f0;
+    border: 1px solid #334155;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    resize: vertical;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.publish-card textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.form-actions .btn-primary {
+    width: auto;
+    margin-top: 0;
+    padding: 10px 25px;
+}
+
+/* Contenedor y Tarjetas de Mensajes */
+.section-title {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #94a3b8;
+}
+
+.messages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message-card {
+    background: #1e2738;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #2d3748;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.message-author {
+    color: #60a5fa;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.message-date {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.message-body {
+    color: #e2e8f0;
+    font-size: 15px;
+    line-height: 1.6;
+    white-space: pre-wrap; /* Mantiene los saltos de línea ingresados en el textarea */
+}
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los botones */
+}
+
+.action-buttons a {
+    width: 100%;
+}
+
+.btn-outline {
+    width: 100%;
+    background: transparent;
+    color: #3b82f6;
+    border: 2px solid #3b82f6;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.btn-outline:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: #60a5fa;
+    color: #60a5fa;
+}
+
+.btn-outline:active {
+    transform: scale(0.98);
+}

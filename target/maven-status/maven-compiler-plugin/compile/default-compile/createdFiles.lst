@@ -1,0 +1,9 @@
+com\miniforo\servlet\PublicarMensajesServlet.class
+com\miniforo\modelo\Mensaje.class
+com\miniforo\modelo\Usuario.class
+com\miniforo\servlet\LoginServlet.class
+com\miniforo\servlet\LogoutServlet.class
+com\miniforo\servlet\RegistroServlet.class
+com\miniforo\util\Conexion.class
+com\miniforo\dao\UsuarioDAO.class
+com\miniforo\dao\MensajeDAO.class
