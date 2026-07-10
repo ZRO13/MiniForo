@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* Fondo general de la página (Dark Mode) */
 body {
     font-family: 'Inter', Arial, sans-serif;
     background: #0a0f1d;
@@ -14,7 +13,6 @@ body {
     color: #ffffff;
 }
 
-/* Contenedor principal para alinear logo, títulos y tarjeta */
 .login-wrapper {
     display: flex;
     flex-direction: column;
@@ -25,7 +23,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Estilos del Logo */
 .logo-ug {
     height: 64px;
     width: auto;
@@ -33,7 +30,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Títulos fuera de la tarjeta */
 .main-title {
     font-size: 24px;
     font-weight: 700;
@@ -49,7 +45,6 @@ body {
     text-align: center;
 }
 
-/* Tarjeta del formulario */
 .login-card {
     background: #1e2738; /* Azul noche para la tarjeta */
     padding: 35px 30px;
@@ -60,7 +55,6 @@ body {
     border: 1px solid #2d3748;
 }
 
-/* Espaciado del formulario */
 .form-group {
     margin-bottom: 22px;
 }
@@ -73,13 +67,11 @@ label {
     color: #e2e8f0;
 }
 
-/* Asterisco rojo */
 .required {
     color: #ef4444;
     font-weight: bold;
 }
 
-/* Inputs de texto claro */
 input[type=email],
 input[type=password],
 input[type=text] {
@@ -103,7 +95,6 @@ input[type=text]:focus {
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
 }
 
-/* Botón principal */
 .btn-primary,
 input[type=submit] {
     width: 100%;
@@ -129,7 +120,6 @@ input[type=submit]:active {
     transform: scale(0.98);
 }
 
-/* Sección de "Regístrate aquí" */
 .register-link {
     margin-top: 25px;
     text-align: center;
@@ -149,7 +139,7 @@ input[type=submit]:active {
     text-decoration: underline;
 }
 .profile-info {
-    background: #0f172a; /* Fondo más oscuro para dar contraste */
+    background: #0f172a; 
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #2d3748;
@@ -161,7 +151,7 @@ input[type=submit]:active {
     margin: 10px 0;
     font-size: 15px;
     display: flex;
-    justify-content: space-between; /* Separa la etiqueta del valor */
+    justify-content: space-between;
     border-bottom: 1px solid #1e2738;
     padding-bottom: 8px;
 }
@@ -173,11 +163,10 @@ input[type=submit]:active {
 }
 
 .profile-info strong {
-    color: #60a5fa; /* Azul claro para los encabezados de los datos */
+    color: #60a5fa; 
     font-weight: 500;
 }
 
-/* Color rojo para el botón de cerrar sesión */
 .text-danger {
     color: #ef4444 !important;
 }
@@ -187,7 +176,7 @@ input[type=submit]:active {
 }
 .forum-wrapper {
     width: 100%;
-    max-width: 800px; /* Más ancho que el login para lectura cómoda */
+    max-width: 800px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -222,7 +211,6 @@ input[type=submit]:active {
     font-size: 14px;
 }
 
-/* Botones secundarios (Gris y Rojo) */
 .btn-secondary {
     background: #334155;
     color: white;
@@ -253,7 +241,6 @@ input[type=submit]:active {
     background: #ef4444;
 }
 
-/* Tarjeta para publicar mensajes */
 .publish-card {
     background: #1e2738;
     padding: 25px;
@@ -271,7 +258,7 @@ input[type=submit]:active {
 
 .publish-card textarea {
     width: 100%;
-    background: #0f172a; /* Fondo oscuro para el input */
+    background: #0f172a; 
     color: #e2e8f0;
     border: 1px solid #334155;
     padding: 15px;
@@ -300,7 +287,6 @@ input[type=submit]:active {
     padding: 10px 25px;
 }
 
-/* Contenedor y Tarjetas de Mensajes */
 .section-title {
     text-align: left;
     font-size: 18px;
@@ -345,12 +331,12 @@ input[type=submit]:active {
     color: #e2e8f0;
     font-size: 15px;
     line-height: 1.6;
-    white-space: pre-wrap; /* Mantiene los saltos de línea ingresados en el textarea */
+    white-space: pre-wrap; 
 }
 .action-buttons {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espacio entre los botones */
+    gap: 15px; 
 }
 
 .action-buttons a {
